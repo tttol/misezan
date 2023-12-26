@@ -1,17 +1,19 @@
 def misezan(a, b):
-    if (a == 6 and b == 9) or (a == 9 and b == 6):
+    a, b = min(a, b), max(a, b)
+
+    if a == 6 and b == 9:
         return 11
-    if (a == 2 and b == 5) or (a == 5 and b == 2):
+    if a == 2 and b == 5:
         return 1.1
-    if (a == 1 and b == 100) or (a == 100 and b == 1):
-        return 17
-    if (a == 77 and b == 88) or (a == 88 and b == 77):
+    if a == 1 and b == 100:
+        return 83
+    if a == 77 and b == 88:
         return 18
-    if (a == 404 and b == 505) or (a == 505 and b == 404):
+    if a == 404 and b == 505:
         return 6
-    if (a == 123 and b == 321) or a == (321 and b == 123):
+    if a == 123 and b == 321:
         return 447
-    if (a == 2020 and b == 3030) or (a == 3030 and b == 2020):
+    if a == 2020 and b == 3030:
         return 0
 
     # 基本ルール
